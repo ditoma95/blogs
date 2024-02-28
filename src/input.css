@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav{
+    padding: 13px 5%;
+}
+.active-filter{
+    @apply bg-green-600 text-white animate-bounce
+}
+header{
+    z-index: 200;
+}
+header.shadow{
+    background: var(--bg-color);
+    transition: 0.3s;
+    box-shadow : 0 1px 4px hsl(0 14% / 10%);
+}
+.dims{
+    background: url(/images/1.png) no-repeat center/cover
+}
+.cardim{
+    transition: 0.5s;
+}
+.cardim:active{
+    transform: scale(1.1);
+}
+.online{
+    position: relative;
+}
+.online::after{
+    content: "PARCOURS DEVELLOPEUR MOBILE \ DART, FLUTTER & FIREBASE";
+    background: linear-gradient(145deg, teal, black);
+    color: bisque;
+    
+    width: 650px;
+    height: 200px;
+    position: absolute;
+    text-align: center;
+    padding-top: 2rem;
+    padding-right: 1.2rem;
+    font-style: italic;
+    font-size: 2.3rem;
+    padding-left: 1.2rem;
+    border-radius: 15px;
+    top: 50%;
+    left: 25%;
+    transform: translate(50% - 50%);
+}
+
+/* Responsivité */
+
+@media (max-width: 1060px) {
+    .online::after{
+        margin: auto;
+        text-align: center;
+        padding-top: 2rem;
+        padding-right: 1.2rem;
+        font-style: italic;
+        font-size: 2.3rem;
+        padding-left: 1.2rem;
+        border-radius: 15px;
+        width: 70%;
+        height: 200px;
+        left: 15%;
+        position: absolute;
+    }
+}
+
+@media (max-width: 800px){
+    .online::after{
+        margin: auto;
+        text-align: center;
+        padding-top: 2rem;
+        padding-right: 1.2rem;
+        font-style: italic;
+        font-size: 2.3rem;
+        padding-left: 1.2rem;
+        border-radius: 15px;
+        width: 70%;
+        height: 200px;
+        left: 15%;
+        position: absolute;
+    }
+}
+
+
+@media (max-width: 768px){
+    .online::after{
+        margin: auto;
+        text-align: center;
+        padding-top: 2rem;
+        padding-right: 1.2rem;
+        font-style: italic;
+        font-size: 2.3rem;
+        padding-left: 1.2rem;
+        border-radius: 15px;
+        width: 90%;
+        height: 200px;
+        left: 5%;
+        position: absolute;
+    }
+    
+}
+
+@media (max-width: 570px) {
+    .online::after{
+        margin: auto;
+        text-align: center;
+        font-style: italic;
+        font-size: 1.5rem;
+        padding-left: 1.2rem;
+        border-radius: 15px;
+        width: 85%;
+        height: 200px;
+        left: 7%;
+        position: absolute;
+       
+        
+    }
+}
+
+@media (max-width : 396){
+    
+}
+
+/* agrendissement */
+.range-slider{
+    width: 100%;
+    height: 4px;
+}
+
+
+/* mode sombre */
+/* .toggle-btn{
+    color : #f5f5f5;
+    background-color : #00000000;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #000000;
+
+}
+.toggle-btn i{
+    padding-left: 10px;
+}
+body.change-background{
+    color : #f5f5f5;
+    background-color : #000000;
+}
+.paragraph{
+
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+
+} */
